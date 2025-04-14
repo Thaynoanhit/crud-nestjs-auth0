@@ -36,7 +36,7 @@ constructor(private userService: UserService) {}
       data: userData,
     });
   }
-  @Post(':id')
+  @Delete(':id')
   async deleteUser(
     @Param('id') id: string,
   ): Promise<UserModel> {
